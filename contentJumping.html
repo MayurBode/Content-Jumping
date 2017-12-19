@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Content Jumping
+</title>
+<head>
+<body bgcolor="lightblue">
+<h1 style="color:red; text-align:center; background-color:yellow;"><strong>Content</strong></h1>
+<a  onclick="setSrc('content.html#html')"><b><i><u><h1>Html</h1></b></i></u>
+<a  onclick="setSrc('content.html#css')"><b><i><u><h1>CSS</h1></b></i></u>
+<a onclick="setSrc('content.html#javascript')"><b><i><u><h1>JavaScript</h1></b></i></u>
+<iframe frameborder="0" src="content.html" width="100%" height="500vh" id='frame' ></iframe>
+<script>
+function setSrc(value){
+	document.getElementById('frame').src=value;
+}
+</script>
+
+</body>
+</html>
+
